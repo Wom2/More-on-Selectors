@@ -13,7 +13,6 @@ describe('My Form application', () => {
         );
     })
     it('should select an option from a dropdown', async () => {
-        await FormPage.open();
         await (browser).pause(1000)
         await (FormPage).titleentry.click()
         await expect(FormPage.titleentry).toHaveTextContaining(
